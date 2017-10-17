@@ -1,0 +1,25 @@
+
+h1 { font-size: 150px; font-style: bold; font-family:  Helvetica; }
+
+
+p {  font-family: Helvetica; font-size: 100px; font-style: normal;} 
+
+
+h2 { font-size: 20px; font-style: normal; font-family: Helvetica;} 
+
+h3 { font-size: 75px; font style: bold; font-family: Helvetica;}
+
+body {font-size: 15px; font-style: normal; font-family: Helvetica;} 
+
+.column { font-size: 20px; font-style: normal; font-family:Helvetica;
+    float: left;
+    width: 50%;
+	padding-bottom: 20px;
+  
+}
+
+.row:after { font-size: 20px; font-style: normal; font-family:Helvetica;
+    content: "";
+    display: table;
+    clear: both;
+}

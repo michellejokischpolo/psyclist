@@ -1,0 +1,78 @@
+<link href = "layout.css" rel = "stylesheet" />
+<script src = "checklist.js"></script>
+<style>
+img{ float: right;
+margin: 0; 0; 100px; 100px;
+}
+</style>
+
+<h3><img src = "C:\Users\Michelle Jokisch\Desktop\route.png" alt = "route" width= "500" height= "300"> anyone can be a psyclist  ||| </h3>
+
+<body>
+
+<table style ="width: 75%">
+
+
+<tr>
+
+<td> <body> the darkest woods </body> </td>
+<td> <body> 4 miles </body> </td>
+
+</tr>
+
+<tr>
+<td> <body> up & down the river </body> </td>
+<td> <body> 8 miles </body> </td>
+
+</tr>
+
+<tr>
+<td> <body> hills for days </body> </td>
+<td> <body> 3 miles</body> </td>
+
+</tr>
+</table>
+</body
+
+
+<html>
+<br>
+
+ <html>
+
+  <body>
+      <h2>create YOUR route</h2>
+
+
+<div class="form">
+  <label for="item">route </label><input type="text" id="item">
+  <button id="submit">submit route with number of miles</button>
+  <button id="clear">clear route</button>
+</div>
+
+<ul id="list">
+
+</ul>
+
+
+  </body>
+
+  <script>
+   var itemInput = document.getElementById("item");
+   var clear = document.getElementById("clear");
+   var submit = document.getElementById("submit");
+   var list = document.getElementById("list");
+   function addItem() {
+     var currentItem = itemInput.value;
+     var listItem = document.createElement("li");
+     listItem.innerHTML = currentItem;
+     list.appendChild(listItem);
+     itemInput.value = "";
+   }
+   submit.onclick = addItem;
+   clear.onclick = function() {
+     list.innerHTML = "";
+     itemInput.value = "";
+   }
+  </script>
+</html>
